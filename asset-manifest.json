@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.b5e26f47.js",
-    "index.html": "/index.html",
-    "main.b5e26f47.js.map": "/static/js/main.b5e26f47.js.map"
+    "main.js": "/www.cindyjcheng.com/static/js/main.b5e26f47.js",
+    "index.html": "/www.cindyjcheng.com/index.html",
+    "main.b5e26f47.js.map": "/www.cindyjcheng.com/static/js/main.b5e26f47.js.map"
   },
   "entrypoints": [
     "static/js/main.b5e26f47.js"
