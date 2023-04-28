@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
+
 function App() {
+
   const [count, setCount] = useState(0);
 
   function incrementCount() {
@@ -9,9 +11,11 @@ function App() {
 
   return (
     <div>
+      
       <h1>Hey!</h1>
       <p>You clicked {count} times</p>
       <button onClick={incrementCount}>Click me</button>
+
     </div>
   );
 }
