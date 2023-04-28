@@ -1,5 +1,3 @@
-import * as PIXI from 'pixi.js';
-import React, { useLayoutEffect, useRef } from 'react';
 import { BlurFilter } from 'pixi.js';
 import { Stage, Container, Sprite, Text } from '@pixi/react';
 import { useMemo } from 'react';
