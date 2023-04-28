@@ -1,3 +1,5 @@
 /*
-  Cache-Control: no-cache, no-store, must-revalidate
+  Cache-Control: max-age=3600
+
+/*.html
   X-Content-Type-Options: nosniff
