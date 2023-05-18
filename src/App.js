@@ -1,23 +1,15 @@
-import React, { useState } from 'react';
-
+import {Route, Routes, Link} from "react-router-dom"
+import { Home } from "./scripts/Home"
+import { Art } from "./scripts/Art"
 
 function App() {
-
-  const [count, setCount] = useState(0);
-
-  function incrementCount() {
-    setCount(count + 1);
-  }
-
+ 
   return (
-    <div>
-      
-      <h1>Hey!</h1>
-      <p>You clicked {count} times</p>
-      <button onClick={incrementCount}>Click me</button>
-
-    </div>
-  );
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/Art" element={<Art />} />
+    </Routes>
+  )
 }
-  
-export default App;
+
+export default App
