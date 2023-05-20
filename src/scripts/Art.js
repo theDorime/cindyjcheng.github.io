@@ -1,3 +1,3 @@
 export function Art() {
-    return <h1>Boo!</h1>
+    return <h1>Art!</h1>
 }
