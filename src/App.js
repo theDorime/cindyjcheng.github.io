@@ -1,6 +1,6 @@
-import {Route, Routes, Link} from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import { Home } from "./scripts/Home"
-import { Art } from "./scripts/Art"
+import { Gallery } from "./scripts/Gallery"
 import { Portfolio } from "./scripts/Portfolio"
 import { Game } from "./scripts/Game"
 function App() {
@@ -8,7 +8,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/Art" element={<Art />} />
+      <Route path="/Gallery" element={<Gallery />} />
       <Route path="/Portfolio" element={<Portfolio />} />
       <Route path="/Game" element={<Game />} />
     </Routes>
