@@ -4,6 +4,10 @@ export function Game() {
     return <div className={"bigblue"}>
         <h1 className="bigblue">Game</h1>
     
+        <button className={"btn"} onClick={() => { navigate("/") }}> 
+            Home
+        </button>
+
         <button className={"btn"} onClick={() => { navigate("/Gallery") }}> 
             Gallery
         </button>
@@ -12,8 +16,5 @@ export function Game() {
             Portfolio
         </button>
         
-        <button className={"btn"} onClick={() => { navigate("/Game") }}> 
-            Game
-        </button>
     </div>
 }

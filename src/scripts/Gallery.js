@@ -5,8 +5,8 @@ export function Gallery() {
 
     <h1 className="bigblue">Photos</h1>
     
-    <button className={"btn"} onClick={() => { navigate("/Gallery") }}> 
-        Gallery
+    <button className={"btn"} onClick={() => { navigate("/") }}> 
+            Home
     </button>
 
     <button className={"btn"} onClick={() => { navigate("/Portfolio") }}> 
