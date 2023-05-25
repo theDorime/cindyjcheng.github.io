@@ -5,7 +5,8 @@ import { Portfolio } from "./scripts/Portfolio"
 import { Game } from "./scripts/Game"
 function App() {
  
-  return
+  return(
+
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/Gallery" element={<Gallery />} />
@@ -13,6 +14,7 @@ function App() {
       <Route path="/Game" element={<Game />} />
     </Routes>
   
+  )
 }
 
 export default App

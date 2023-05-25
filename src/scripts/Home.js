@@ -6,9 +6,9 @@ import '../App.css';
 export function Home() {
     const navigate = useNavigate()
 
-    return <><div className={"bigblue"}> 
+    return <div className={"bigblue"}> 
 
-        <h1>I'm working on it</h1>
+        <h1>I'm working on it plz wait I swear</h1>
 
         {/* <button className={"btn"} onClick={() => { navigate("/Gallery") }}> 
             Gallery
@@ -23,7 +23,6 @@ export function Home() {
         </button> */}
 
     </div>
-    </>
 
 }
 
