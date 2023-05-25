@@ -6,11 +6,11 @@ import '../App.css';
 export function Home() {
     const navigate = useNavigate()
 
-    return <div className={"bigblue"}> 
+    return <><div className={"bigblue"}> 
 
-        <h1>Cindy J Cheng</h1>
+        <h1>I'm working on it</h1>
 
-        <button className={"btn"} onClick={() => { navigate("/Gallery") }}> 
+        {/* <button className={"btn"} onClick={() => { navigate("/Gallery") }}> 
             Gallery
         </button>
 
@@ -20,9 +20,10 @@ export function Home() {
         
         <button className={"btn"} onClick={() => { navigate("/Game") }}> 
             Game
-        </button>
+        </button> */}
 
     </div>
+    </>
 
 }
 
