@@ -14,13 +14,13 @@ export function Home() {
             Gallery
         </button>
 
-        <button className={"btn"} onClick={() => { navigate("/Portfolio") }}> 
+        {/* <button className={"btn"} onClick={() => { navigate("/Portfolio") }}> 
             Portfolio
         </button>
         
         <button className={"btn"} onClick={() => { navigate("/Game") }}> 
             Game
-        </button>
+        </button> */}
 
     </div>
 
