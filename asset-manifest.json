@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/cindyjcheng.com/static/css/main.8bb9905c.css",
-    "main.js": "/cindyjcheng.com/static/js/main.ebe9ada6.js",
-    "static/media/pfp.JPG": "/cindyjcheng.com/static/media/pfp.9ffc3d575609046e39a9.JPG",
-    "index.html": "/cindyjcheng.com/index.html",
-    "main.8bb9905c.css.map": "/cindyjcheng.com/static/css/main.8bb9905c.css.map",
-    "main.ebe9ada6.js.map": "/cindyjcheng.com/static/js/main.ebe9ada6.js.map"
+    "main.css": "/static/css/main.8bb9905c.css",
+    "main.js": "/static/js/main.68568688.js",
+    "index.html": "/index.html",
+    "main.8bb9905c.css.map": "/static/css/main.8bb9905c.css.map",
+    "main.68568688.js.map": "/static/js/main.68568688.js.map"
   },
   "entrypoints": [
     "static/css/main.8bb9905c.css",
-    "static/js/main.ebe9ada6.js"
+    "static/js/main.68568688.js"
   ]
 }
