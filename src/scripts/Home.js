@@ -8,9 +8,9 @@ export function Home() {
 
     return <div className={"bigblue"}> 
 
-        <h1>I'm working on it plz wait I swear</h1>
+        <h1>In the works</h1>
 
-        {/* <button className={"btn"} onClick={() => { navigate("/Gallery") }}> 
+         {/* <button className={"btn"} onClick={() => { navigate("/Gallery") }}> 
             Gallery
         </button>
 
@@ -20,7 +20,7 @@ export function Home() {
         
         <button className={"btn"} onClick={() => { navigate("/Game") }}> 
             Game
-        </button> */}
+        </button>  */}
 
     </div>
 
