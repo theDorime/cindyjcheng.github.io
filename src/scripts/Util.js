@@ -1,31 +1,38 @@
-import { useNavigate } from "react-router-dom" 
+import { useNavigate } from 'react-router-dom';
+import { Navbar, Nav } from 'react-bootstrap';
 import "../App.css"
 
-export function CreateNavBar() { 
-    const navigate = useNavigate()
-    const widthR = window.innerWidth
-    const heightR = window.innerHeight
 
-    return <div className="navBar">
 
-        <div style={{maxWidth:widthR/4, margin:"auto"}}>
-        <button className="navBtn" onClick={() => { navigate("/") }}> 
-            Home
-        </button>
+export function SideNavBar(page) {
+    const navigate = useNavigate();
 
-        <button className="navBtn" onClick={() => { navigate("/Gallery") }}> 
-            Gallery
-        </button>
+    let pageNav= page;
 
-        <button className="navBtn" onClick={() => { navigate("/Portfolio") }}> 
-            Portfolio
-        </button>
-        
-        <button className="navBtn" onClick={() => { navigate("/Game") }}> 
-            Game
-        </button>
-        </div>
-        </div>
+    if (page === 'Home') {
+        pageNav = '/';
+    }
 
-   
-}
+    const links = [ 
+        { path: '/', text: 'Home' }, 
+        { path: '/Gallery', text: 'Gallery' }, 
+        { path: '/Portfolio', text: 'Portfolio' }, 
+        { path: '/Game', text: 'Game' }
+    ]
+    const linksFiltered = links.filter(item => item.path !== pageNav && item.text !== page);
+    return (
+        <Navbar bg="light" expand="lg" className="ml-auto align-items-left">
+        <Navbar.Brand href="#">{page}</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarNav" />
+        <Navbar.Collapse id="navbarNav">
+          <Nav className="ml-auto align-items-center">
+            {linksFiltered.map((linksFiltered , index) => (
+            <li key={index}>
+                <Nav.Link onClick={() => navigate(linksFiltered.path)}>{linksFiltered.text}</Nav.Link>
+                </li>
+            ))};
+        </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    );
+  }

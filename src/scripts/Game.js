@@ -1,5 +1,7 @@
+import { SideNavBar } from "./Util";
+
 export function Game() {
     return <div>
-        <h1> Game </h1>
+        {SideNavBar('Game')}
     </div>
 }

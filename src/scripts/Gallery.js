@@ -1,36 +1,39 @@
+import { SideNavBar } from "./Util"
+
 export function Gallery() {
-    const widthR = window.innerWidth
-    const heightR = window.innerHeight
 
-    return <div style={{maxWidth:widthR-widthR/4, margin:"auto"}}>
+    return <div>
+        {SideNavBar('Gallery')}
 
-        <h1  style={{textAlign:"center"}}> Gallery </h1>
-        
-       <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <img src={ require('../assets/sample/img1.JPG') }  alt="pic should be here" width="304" height="236" className="img-rounded"/>
-                    <div class="caption">
+        <div className="row">
+
+            <div className="col-md-4">
+                <div className="thumbnail">
+                
+                    <img src={ require('../assets/sample/img1.JPG') } className="img-fluid" alt="pic should be here"/>
                     <p>Photo of Niagara Falls.</p>
-                    </div>
+                
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <img src={ require('../assets/sample/img2.JPG') } alt="pic should be here" width="304" height="236" className="img-rounded"/>
-                    <div class="caption">
+
+            <div className="col-md-4">
+                <div className="thumbnail">
+                    <img src={ require('../assets/sample/img2.JPG') } className="img-fluid" alt="pic should be here"/>
+                    <div className="caption">
                     <p>Another photo of Niagara Falls.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <img src={ require('../assets/sample/img3.JPG') } alt="pic should be here" width="304" height="236" className="img-rounded"/>
-                    <div class="caption">
+            
+            <div className="col-md-4">
+                <div className="thumbnail">
+                    <img src={ require('../assets/sample/img3.JPG') } className="img-fluid" alt="pic should be here"/>
+                    <div className="caption">
                     <p>A different angle of Niagara Falls.</p>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 }
