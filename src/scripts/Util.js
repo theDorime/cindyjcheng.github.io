@@ -8,7 +8,6 @@ export function SideNavBar(page) {
     const navigate = useNavigate();
 
     let pageNav= page;
-
     if (page === 'Home') {
         pageNav = '/';
     }
@@ -19,10 +18,11 @@ export function SideNavBar(page) {
         { path: '/Portfolio', text: 'Portfolio' }, 
         { path: '/Game', text: 'Game' }
     ]
-    const linksFiltered = links.filter(item => item.path !== pageNav && item.text !== page);
+    const linksFiltered = links.filter(item => item.path !== pageNav && item.text !== page)
+
     return (
         <Navbar bg="light" expand="lg" className="ml-auto align-items-left">
-        <Navbar.Brand href="#">{page}</Navbar.Brand>
+        <Navbar.Brand href={pageNav}>{page}</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarNav" />
         <Navbar.Collapse id="navbarNav">
           <Nav className="ml-auto align-items-center">
@@ -30,9 +30,9 @@ export function SideNavBar(page) {
             <li key={index}>
                 <Nav.Link onClick={() => navigate(linksFiltered.path)}>{linksFiltered.text}</Nav.Link>
                 </li>
-            ))};
+            ))}
         </Nav>
         </Navbar.Collapse>
       </Navbar>
-    );
-  }
+    )
+  };

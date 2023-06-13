@@ -6,7 +6,6 @@ export function Gallery() {
         {SideNavBar('Gallery')}
 
         <div className="row">
-
             <div className="col-md-4">
                 <div className="thumbnail">
                 
@@ -36,4 +35,4 @@ export function Gallery() {
 
         </div>
     </div>
-}
+};

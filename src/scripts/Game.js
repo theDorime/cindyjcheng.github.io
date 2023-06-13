@@ -4,4 +4,4 @@ export function Game() {
     return <div>
         {SideNavBar('Game')}
     </div>
-}
+};

@@ -1,16 +1,11 @@
-.navBar { 
- color: orange;
- background-color: blueviolet;
- padding: 10px;
- align-content: center;
+h3 {
+  left: 0;
+  line-height: 200px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  }
 
-}
-
-.navBtn {
-  color: white;
-  background-color: red;
-  padding: 10px;
-  margin: 10px;
   
-}
-
