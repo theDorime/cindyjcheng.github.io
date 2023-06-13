@@ -22,8 +22,7 @@ export function Game() {
     
     return <div>
         {SideNavBar('Game')}
-        <p>Whack-a-Mole:</p>
-        <p># Of Whacks: {count}</p>
+        <p># Of Whacks: <b>{count}</b></p>
         <img src={ require('../assets/mole1.png') } style={{ position: 'absolute', top: position.y, left: position.x, width:'25px', height:'25px'}} onClick={handleImageClick}
         alt="Button" className="img-fluid"/>
         </div>
