@@ -1,0 +1,46 @@
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image-gallery img {
+  width: calc(33.33% - 20px); /* Adjust the percentage and spacing as needed */
+  max-width: 500px; /* Adjust the maximum width as needed */
+  height: auto;
+  margin-bottom: 10px; /* Adjust the spacing between rows */
+  box-sizing: border-box;
+}
+
+.image-gallery img:first-child {
+  margin-left: 20px; /* Add margin to the left side of the first image */
+}
+
+.image-gallery img:last-child {
+  margin-right: 20px; /* Add margin to the right side of the last image */
+}
+
+.line-with-header {
+  display: flex;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: calc(33.33% - 20px); /* Adjust the percentage and spacing as needed */
+  max-width: 500px; /* Adjust the maximum width as needed */
+  height: auto;
+  margin-bottom: 10px; /* Adjust the spacing between rows */
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+
+.header-title {
+  margin-left: 20px;
+}
+
+.line {
+  flex-grow: 0.90;
+  border-top: 2px solid #000;
+  margin-left: 20px;
+  margin-right: 20px;
+}

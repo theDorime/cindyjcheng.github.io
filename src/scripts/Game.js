@@ -1,4 +1,4 @@
-import { SideNavBar } from "./Util";
+import { SideNavBar } from './Util';
 import React, { useState } from 'react';
 import soundEffect from '../assets/ouch.mp3';
 export function Game() {

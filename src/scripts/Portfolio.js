@@ -1,4 +1,4 @@
-import { SideNavBar } from "./Util";
+import { SideNavBar } from './Util';
 
 export function Portfolio() {
    return <div>
