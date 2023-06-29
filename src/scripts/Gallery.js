@@ -61,12 +61,13 @@ export function Gallery() {
         textDecoration: 'none',
         outline: 'none',
         boxShadow: 'none',
+        
       };
 
       const pr = '../assets/filmPhotos/img'
     return <div>
          
-      <Navbar className="navBar ml-auto" >
+      <Navbar className="navBar ml-auto" fixed="top" >
           <Nav> {links.map((link, index) => (
               <Nav.Link onClick={() => navigate(link.path)}>{link.text}</Nav.Link>))}
           </Nav>
@@ -82,6 +83,7 @@ export function Gallery() {
               </Dropdown.Menu>
       </Dropdown>
   </Navbar>
+  
         <div class="line-with-header">
             <h2 class="header-title">Puerto Rico</h2>
             <hr class="line"/>

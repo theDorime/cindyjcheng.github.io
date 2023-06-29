@@ -21,7 +21,7 @@ export function SideNavBar(page) {
 
   return (
     <div>
-      <Navbar className="navBar ml-auto" >
+      <Navbar className="navBar ml-auto" fixed="top">
         <Nav>
           {links.map((link, index) => (
               <Nav.Link onClick={() => navigate(link.path)} className={page === link.text ? "active" : ""}>{link.text}</Nav.Link>

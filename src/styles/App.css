@@ -17,10 +17,9 @@ p {
   background-color: grey;
   align-items: left;
   text-align: left;
-  position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999;
+  
 }
 
 .active {
