@@ -49,29 +49,23 @@
 .container {
   padding-top:80px;
 }
-@media (max-width: 767px) {
-  .header-title {
-    font-size: medium;
+
+.image-gallery-clicked img {
+  /* width: auto;
+  height: auto;
+  box-sizing: border-box;
+  */
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20x;
+  width: calc(100% - 40px);
+  height: auto;
   }
 
-  .image-gallery img {
-    width: auto;
-    height: auto;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 20px;
-  }
-
-  .image-gallery img:first-child {
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 20px;
-  }
   
-  .image-gallery img:last-child {
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 20px;
-  }
-}
+/*for ref
+ @media (max-width: 767px) { 
+.header-title-clicked {
+   font-size: medium;
+} 
+*/

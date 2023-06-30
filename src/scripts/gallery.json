@@ -1,0 +1,27 @@
+
+[
+    
+    {
+        "name": "Puerto Rico", 
+        "path": "puertoRico/",
+        "photos": {
+            "src": 
+            [
+                "img1.JPG", "img2.JPG", "img3.JPG","img4.JPG", "img5.JPG", "img6.JPG", "img7.JPG", "img8.JPG", "img9.JPG", "img10.JPG", "img11.JPG", "img12.JPG"
+            ]
+        }
+    },
+
+    {
+        "name": "Graduation", 
+        "path": "grad/",
+        "photos": {
+            "src": 
+            [
+                "img1.JPG", "img2.JPG", "img3.JPG", "img4.JPG", "img5.JPG", "img6.JPG"
+            ]
+        }
+    }
+
+    
+]
