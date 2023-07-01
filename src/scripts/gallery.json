@@ -7,7 +7,18 @@
         "photos": {
             "src": 
             [
-                "img1.JPG", "img2.JPG", "img3.JPG","img4.JPG", "img5.JPG", "img6.JPG", "img7.JPG", "img8.JPG", "img9.JPG", "img10.JPG", "img11.JPG", "img12.JPG"
+                "img2.JPG", "img3.JPG","img4.JPG", "img7.JPG", "img8.JPG", "img9.JPG", "img5.JPG", "img6.JPG", "img13.JPG"
+            ]
+        }
+    },
+
+    {
+        "name": "Niagara Falls", 
+        "path": "falls/",
+        "photos": {
+            "src": 
+            [
+                "img1.JPG", "img2.JPG", "img3.JPG"
             ]
         }
     },
@@ -18,10 +29,20 @@
         "photos": {
             "src": 
             [
+                "img4.JPG", "img5.JPG", "img6.JPG", "img1.JPG", "img2.JPG", "img3.JPG"
+            ]
+        }
+    },
+
+    {
+        "name": "Spring Break", 
+        "path": "home/",
+        "photos": {
+            "src": 
+            [
                 "img1.JPG", "img2.JPG", "img3.JPG", "img4.JPG", "img5.JPG", "img6.JPG"
             ]
         }
     }
 
-    
 ]
