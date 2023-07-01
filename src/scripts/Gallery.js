@@ -118,7 +118,7 @@ export function Gallery() {
             //trying to ref every image to scroll to image on click in scroll view - too many hooks, async? 
             // <img ref={imgRefs[imgCt]} src={require(`../assets/filmPhotos/${section.path}${section.photos.src[i+ii]}`)} alt="Pic should be here" key={imgCt}
             // onClick={handleImageClick}/>
-            <img src={require(`../assets/filmPhotos/${section.path}${section.photos.src[i+ii]}`)} alt="Pic should be here" key={section.path+section.photos.src[i+ii]}
+            <img src={require(`../assets/filmPhotos/${section.path}${section.photos.src[i+ii]}`)} alt="Pic should be here" key={section.path+section.photos.src[i+ii]} loading="lazy"
             onClick={handleImageClick}/>
           )
           imgCt++; 
