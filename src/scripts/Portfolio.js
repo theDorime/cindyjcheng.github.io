@@ -3,7 +3,9 @@ import '../styles/Portfolio.css';
 export function Portfolio() {
    return <div>
         {SideNavBar('Portfolio')}
+
         <h3 className='portAlign'> For my resume and stuff <br/><br/>
+
         
         <a href="https://github.com/theDorime/cindyc">
             <button type="button" class="btn btn-dark">Github Repo</button>
