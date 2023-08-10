@@ -8,7 +8,7 @@ export function Portfolio() {
 
         
         <a href="https://github.com/theDorime/cindyc">
-            <button type="button" class="btn btn-dark">Github Repo</button>
+            <button type="button" class="btn btn-dark">Site's Github Repo</button>
         </a>
         <br/><br/>
         <a href="https://www.linkedin.com/in/cindy-j-c-566615167">

@@ -33,17 +33,6 @@ const itemStyle = {
   boxShadow: 'none',
 };
 
-//preload image refs 
-//const imgRefs = []; 
-// data.forEach((section) => {
-//   for (let i = 0; i < section.photos.src.length; i++) {
-//     const newRef = createRef(); 
-//     imgRefs.push(newRef);
-
-//   };
-
-// })
-
 export function Gallery() {
 
   const buildGallery = []
@@ -58,55 +47,29 @@ export function Gallery() {
     }
   };
 
-  const divRef1 = useRef(null);
-  const divRef2 = useRef(null);
-  const divRef3 = useRef(null);
-  const divRef4 = useRef(null);
-
+  const refs = [useRef(null), useRef(null), useRef(null), useRef(null)];
+  
   const scrollToDiv1 = () => {
-    divRef1.current.scrollIntoView({ behavior: "smooth" });
+    refs[0].current.scrollIntoView({ behavior: "smooth" });
   };
   const scrollToDiv2 = () => {
-    divRef2.current.scrollIntoView({ behavior: "smooth" });
+    refs[1].current.scrollIntoView({ behavior: "smooth" });
   };
   const scrollToDiv3 = () => {
-    divRef3.current.scrollIntoView({ behavior: "smooth" });
+    refs[2].current.scrollIntoView({ behavior: "smooth" });
 };
   const scrollToDiv4 = () => {
-    divRef4.current.scrollIntoView({ behavior: "smooth" });
+    refs[3].current.scrollIntoView({ behavior: "smooth" });
   };
 
-  let sectionCt = 1;
+  let sectionCt = 0;
   data.forEach((section) => {
-    if (sectionCt == 1) {
-    buildGallery.push(
-    <div ref={divRef1}className="line-with-header">
-        <h2 className="header-title">{section.name}</h2>
-        <hr className="line"/>
-    </div>)
-    }
-    else if (sectionCt == 2) {
-      buildGallery.push(
-      <div ref={divRef2}className="line-with-header">
-        <h2 className="header-title">{section.name}</h2>
-        <hr className="line"/>
-    </div>)
-    }
-    else if (sectionCt == 3) {
-      buildGallery.push(
-      <div ref={divRef3}className="line-with-header">
-        <h2 className="header-title">{section.name}</h2>
-        <hr className="line"/>
-    </div>)
-    }
 
-    else if (sectionCt == 4) {
-      buildGallery.push(
-      <div ref={divRef4}className="line-with-header">
-        <h2 className="header-title">{section.name}</h2>
-        <hr className="line"/>
-    </div>)
-    }
+    buildGallery.push(
+      <div ref={refs[sectionCt]}className="line-with-header">
+          <h2 className="header-title">{section.name}</h2>
+          <hr className="line"/>
+      </div>)
     sectionCt++;
     
      
@@ -114,34 +77,19 @@ export function Gallery() {
       const buildImgs = [];
       if(i%3 == 0){
         for (let ii = 0; ii < 3; ii++) {
-          buildImgs.push(
-            //trying to ref every image to scroll to image on click in scroll view - too many hooks, async? 
-            // <img ref={imgRefs[imgCt]} src={require(`../assets/filmPhotos/${section.path}${section.photos.src[i+ii]}`)} alt="Pic should be here" key={imgCt}
-            // onClick={handleImageClick}/>
-            <img src={require(`../assets/filmPhotos/${section.path}${section.photos.src[i+ii]}`)} alt="Pic should be here" key={section.path+section.photos.src[i+ii]} loading="lazy"
+          buildImgs.push(<img src={require(`../assets/filmPhotos/${section.path}${section.photos.src[i+ii]}`)} alt="Pic should be here" key={section.path+section.photos.src[i+ii]} loading="lazy"
             onClick={handleImageClick}/>
           )
           imgCt++; 
         }
         buildGallery.push(<div className={isImageClicked ? "image-gallery-clicked" : 'image-gallery'} key={i} >{buildImgs}</div>);
-        //buildGallery.push(<div className={'image-gallery'} key={i} >{buildImgs}</div>);
-      };
+       };
     };
   });
-  
-  //gallery view padding
-  // for (let i = 0; i < (section.photos.src.length % 3) + section.photos.src.length % 3; i++) { 
-  //   const buildPH = []; 
-  //   buildPH.push(<div className="image-placeholder"/>)
-  // };
-
   const navigate = useNavigate();
 
 return <div>
-
-  {/* {SideNavBar('Gallery')} */}
-  {/* <Button onClick={scrollToImg}></Button> */}
-
+  
   <Navbar className="navBar ml-auto" fixed="top" >
           <Nav> {links.map((link, index) => (
               <Nav.Link onClick={() => navigate(link.path)}>{link.text}</Nav.Link>))}

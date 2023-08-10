@@ -5,11 +5,11 @@ export function Home() {
     return <div> 
         {SideNavBar('Home')}
         <div class="container-fluid bg-2 text-center">
-            <img src={require("./pfp.JPG")} class="img-responsive img-circle margin" alt="Bird" width="300" height="300"/>
+            <img src={require("./pfp.JPG")} class="img-responsive img-circle margin" alt="Bird" width="250" height="280"/>
             <h3 className="aboutText">
-                Welcome and thank you for stopping by my personal website. 
+                Welcome and thank you for stopping by my personal website.
                 <br></br>
-                I created this site to play around with code, share, and inspire! 
+                This was created to play around with code, share, and inspire! 
             </h3>
         </div>
         
