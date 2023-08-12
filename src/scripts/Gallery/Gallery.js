@@ -1,16 +1,21 @@
-import { SideNavBar } from './Util'
-import '../styles/Gallery.css'
+import { SideNavBar } from '../Util'
+import '../../styles/Gallery.css'
 import { useRef, useEffect, useState, createRef } from 'react';
 import { Navbar, Nav, Dropdown, Button} from 'react-bootstrap';
 import { useNavigate  } from 'react-router-dom';
 
-const data = require('./gallery.json');
+const data = require('../../jsons/gallery.json');
 
 const links = [ 
     { path: '/', text: 'Home' }, 
     { path: '/Portfolio', text: 'Portfolio' }, 
     { path: '/Game', text: 'Game' }
-]
+];
+
+  let sectionLinks = [];
+  data.forEach((section) => {
+    sectionLinks.push({ path: '/Photos', text: section.name})
+  })
 
 const customToggleStyle = {
   backgroundColor: 'transparent',
@@ -32,17 +37,6 @@ const itemStyle = {
   outline: 'none',
   boxShadow: 'none',
 };
-
-//preload image refs 
-//const imgRefs = []; 
-// data.forEach((section) => {
-//   for (let i = 0; i < section.photos.src.length; i++) {
-//     const newRef = createRef(); 
-//     imgRefs.push(newRef);
-
-//   };
-
-// })
 
 export function Gallery() {
 
@@ -115,35 +109,21 @@ export function Gallery() {
       if(i%3 == 0){
         for (let ii = 0; ii < 3; ii++) {
           buildImgs.push(
-            //trying to ref every image to scroll to image on click in scroll view - too many hooks, async? 
-            // <img ref={imgRefs[imgCt]} src={require(`../assets/filmPhotos/${section.path}${section.photos.src[i+ii]}`)} alt="Pic should be here" key={imgCt}
-            // onClick={handleImageClick}/>
-            <img src={require(`../assets/filmPhotos/${section.path}${section.photos.src[i+ii]}`)} alt="Pic should be here" key={section.path+section.photos.src[i+ii]} loading="lazy"
+            <img src={require(`../../assets/filmPhotos/${section.path}${section.photos.src[i+ii]}`)} alt="Pic should be here" key={section.path+section.photos.src[i+ii]} loading="lazy"
             onClick={handleImageClick}/>
           )
           imgCt++; 
         }
         buildGallery.push(<div className={isImageClicked ? "image-gallery-clicked" : 'image-gallery'} key={i} >{buildImgs}</div>);
-        //buildGallery.push(<div className={'image-gallery'} key={i} >{buildImgs}</div>);
-      };
+       };
     };
   });
-  
-  //gallery view padding
-  // for (let i = 0; i < (section.photos.src.length % 3) + section.photos.src.length % 3; i++) { 
-  //   const buildPH = []; 
-  //   buildPH.push(<div className="image-placeholder"/>)
-  // };
-
   const navigate = useNavigate();
 
 return <div>
 
-  {/* {SideNavBar('Gallery')} */}
-  {/* <Button onClick={scrollToImg}></Button> */}
-
   <Navbar className="navBar ml-auto" fixed="top" >
-          <Nav> {links.map((link, index) => (
+          <Nav> {links.map((link,) => (
               <Nav.Link onClick={() => navigate(link.path)}>{link.text}</Nav.Link>))}
           </Nav>
           <Dropdown>
@@ -152,10 +132,8 @@ return <div>
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Button style={itemStyle} onClick={scrollToDiv1}> Puerto Rico </Button>
-                <Button style={itemStyle} onClick={scrollToDiv2}> Niagara Falls </Button>
-                <Button style={itemStyle} onClick={scrollToDiv3}> Graduation </Button>
-                <Button style={itemStyle} onClick={scrollToDiv4}> Spring Break </Button>
+               {sectionLinks.map((link) => (
+                <Button style={itemStyle} onClick={() => navigate(link.path)}>{link.text}</Button>))}
                 
               </Dropdown.Menu>
       </Dropdown>

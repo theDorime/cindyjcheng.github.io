@@ -1,8 +1,9 @@
 import { Route, Routes } from "react-router-dom"
 import { Home } from "./scripts/Home"
-import { Gallery } from "./scripts/Gallery"
+import { Gallery } from "./scripts/Gallery/Gallery"
 import { Portfolio } from "./scripts/Portfolio"
 import { Game } from "./scripts/Game"
+import { Photos } from "./scripts/Gallery/Photos"
 import { SideNavBar, CreateNavBar } from "./scripts/Util"
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/Game" element={<Game />} />
+        <Route path="/Photos" element={<Photos />} />
       </Routes>
     </div>
   )
