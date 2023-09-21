@@ -14,10 +14,13 @@ function App() {
       
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/Game" element={<Game />} />
-        <Route path="/Photos" element={<Photos />} />
+
+        
+        <Route path="/Gallery" element={<Gallery />} />
+        {/* <Route path="/Places" element={<Places />} />
+        <Route path="/Graduation" element={<Graduation />} /> */}
       </Routes>
     </div>
   )
