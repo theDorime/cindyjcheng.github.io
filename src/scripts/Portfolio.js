@@ -4,7 +4,7 @@ export function Portfolio() {
    return <div>
         {SideNavBar('Portfolio')}
 
-        <h3 className='portAlign'> For my resume and stuff <br/><br/>
+        <h3 className='portAlign'> Info <br/><br/>
 
         
         <a href="https://github.com/theDorime/cindyc">

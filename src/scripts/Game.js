@@ -22,7 +22,7 @@ export function Game() {
     
     return <div>
         {SideNavBar('Game')}
-        <h3>Still working on it . . .
+        <h3>A work in progress . . .
         <br></br><h5>Whack mole for now<br></br># Of Whacks: <b style={{ color: 'red' }}>{count}</b> </h5> </h3>
         
         <img src={ require('../assets/mole1.png') } style={{ position: 'absolute', top: position.y, left: position.x, width:'25px', height:'25px'}} onClick={handleImageClick}

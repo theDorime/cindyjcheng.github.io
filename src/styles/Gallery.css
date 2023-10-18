@@ -1,5 +1,6 @@
 .images {
   border-radius: 50%;
+  margin-top: 10px;
 }
 
 .image-gallery {
@@ -50,6 +51,7 @@
 
 .header-title {
   margin-left: 20px;
+  margin-top: 10px;
 }
 
 .line {
@@ -58,6 +60,7 @@
   border-top: 2px solid #000;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 20px;
 }
 
 .container {
