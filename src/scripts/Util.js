@@ -14,7 +14,7 @@ export function SideNavBar(page) {
   const links = [ 
       { path: '/', text: 'Home' }, 
       { path: '/Portfolio', text: 'Portfolio' }, 
-      { path: '/Game', text: 'Game' }
+      { path: '/Game', text: 'Game' },
   ]
 
   const galleryData = require('../jsons/gallery.json');
@@ -25,7 +25,17 @@ export function SideNavBar(page) {
     sectionLinks.push({ path: '/'+section.name.replace(' ', ''), text: section.name})
   })
 
-  const customToggleStyle = {
+  const toggleStyle = {
+    backgroundColor: 'transparent',
+    border: 'none',
+    color: 'inherit',
+    cursor: 'pointer',
+    textDecoration: 'none',
+    outline: 'none',
+    boxShadow: 'none'
+  };
+
+  const activeToggleStyle = {
     backgroundColor: 'transparent',
     border: 'none',
     color: 'inherit',
@@ -33,6 +43,7 @@ export function SideNavBar(page) {
     textDecoration: 'none',
     outline: 'none',
     boxShadow: 'none',
+    fontWeight: 'bold'
   };
 
   const itemStyle = {
@@ -55,10 +66,10 @@ export function SideNavBar(page) {
               <Nav.Link onClick={() => navigate(link.path)} className={page === link.text ? "active" : ""}>{link.text}</Nav.Link>
           ))}
          </Nav>
-         <Dropdown 
+         <Dropdown
          onMouseOver={() => setShowDropdown(true)}
-        onMouseLeave={() => setShowDropdown(false)}>
-              <Dropdown.Toggle style={customToggleStyle} onMouseOver={() => setShowDropdown(true)}>
+         onMouseLeave={() => setShowDropdown(false)}>
+              <Dropdown.Toggle style={page === 'Gallery' ? activeToggleStyle : toggleStyle} onMouseOver={() => setShowDropdown(true)}>
           Gallery
         </Dropdown.Toggle>
 
