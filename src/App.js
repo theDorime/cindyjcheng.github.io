@@ -1,9 +1,10 @@
 import { Route, Routes } from "react-router-dom"
 import { Home } from "./scripts/Home"
-import { Gallery } from "./scripts/Gallery/Gallery"
 import { Portfolio } from "./scripts/Portfolio"
 import { Game } from "./scripts/Game"
-import { Photos } from "./scripts/Gallery/Photos"
+
+import { Gallery, PuertoRico, Graduation, NiagaraFalls, SpringBreak } from "./scripts/Gallery/Gallery"
+
 import { SideNavBar, CreateNavBar } from "./scripts/Util"
 
 function App() {
@@ -17,10 +18,10 @@ function App() {
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/Game" element={<Game />} />
 
-        
-        <Route path="/Gallery" element={<Gallery />} />
-        {/* <Route path="/Places" element={<Places />} />
-        <Route path="/Graduation" element={<Graduation />} /> */}
+        <Route path="/Graduation" element={<Graduation />} />
+        <Route path="/NiagaraFalls" element={<NiagaraFalls />} />  
+        <Route path="/PuertoRico" element={<PuertoRico />} /> 
+        <Route path="/SpringBreak" element={<SpringBreak />} /> 
       </Routes>
     </div>
   )
