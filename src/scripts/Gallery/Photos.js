@@ -30,7 +30,7 @@ class Photos extends Component {
             if(i%3 == 0){
                 for (let ii = 0; ii < 3; ii++) {
                     buildImgs.push(
-                        <img src={require(`../../assets/filmPhotos/${this.dataSect.path}${this.dataSect.photos.src[i+ii]}`)} alt="Pic should be here" key={this.dataSect.path+this.dataSect.photos.src[i+ii]} loading="lazy"
+                        <img class="images" src={require(`../../assets/filmPhotos/${this.dataSect.path}${this.dataSect.photos.src[i+ii]}`)} alt="Pic should be here" key={this.dataSect.path+this.dataSect.photos.src[i+ii]} loading="lazy"
                         />
                     )
                     imgCt++; 
