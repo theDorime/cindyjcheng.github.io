@@ -1,8 +1,10 @@
 import { Route, Routes } from "react-router-dom"
 import { Home } from "./scripts/Home"
-import { Gallery } from "./scripts/Gallery"
 import { Portfolio } from "./scripts/Portfolio"
 import { Game } from "./scripts/Game"
+
+import { Gallery, PuertoRico, Graduation, NiagaraFalls, SpringBreak } from "./scripts/Gallery/Gallery"
+
 import { SideNavBar, CreateNavBar } from "./scripts/Util"
 
 function App() {
@@ -13,9 +15,13 @@ function App() {
       
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Gallery" element={<Gallery />} />
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/Game" element={<Game />} />
+
+        <Route path="/Graduation" element={<Graduation />} />
+        <Route path="/NiagaraFalls" element={<NiagaraFalls />} />  
+        <Route path="/PuertoRico" element={<PuertoRico />} /> 
+        <Route path="/SpringBreak" element={<SpringBreak />} /> 
       </Routes>
     </div>
   )
