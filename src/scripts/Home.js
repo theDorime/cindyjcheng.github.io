@@ -9,7 +9,8 @@ export function Home() {
             <h3 className="aboutText">
                 Welcome and thank you for stopping by my personal website. 
                 <br></br>
-                I created this site to play around with code, share, and inspire! 
+                <br></br>
+                I created this site to play around with code, share, and inspire :)
             </h3>
         </div>
         
