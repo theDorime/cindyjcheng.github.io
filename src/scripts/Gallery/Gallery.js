@@ -3,7 +3,7 @@ import { SideNavBar } from '../Util'
 import Photos from './Photos'
 
 export function PuertoRico() {
-    const bg = new Photos('PuertoRico');
+    const bg = new Photos('Puerto Rico');
     return <div> 
             {SideNavBar('Gallery')}
             {bg.buildGallery()}
@@ -11,7 +11,7 @@ export function PuertoRico() {
 }
 
 export function NiagaraFalls() {
-    const bg = new Photos('NiagaraFalls');
+    const bg = new Photos('Niagara Falls');
     return <div> 
             {SideNavBar('Gallery')}
             {bg.buildGallery()}
@@ -27,7 +27,7 @@ export function Graduation() {
 }
 
 export function SpringBreak() {
-    const bg = new Photos('SpringBreak');
+    const bg = new Photos('Spring Break');
     return <div> 
             {SideNavBar('Gallery')}
             {bg.buildGallery()}

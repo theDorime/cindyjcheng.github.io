@@ -16,11 +16,6 @@ class Photos extends Component {
           };
     };
 
-    handleImageClick = () => {
-        const { isImageClicked } = this.state;
-        this.setState({ isImageClicked: !isImageClicked });
-      };
-
     buildGallery = () => {
         const build = []
         let imgCt = 0; 
@@ -36,12 +31,12 @@ class Photos extends Component {
                 for (let ii = 0; ii < 3; ii++) {
                     buildImgs.push(
                         <img src={require(`../../assets/filmPhotos/${this.dataSect.path}${this.dataSect.photos.src[i+ii]}`)} alt="Pic should be here" key={this.dataSect.path+this.dataSect.photos.src[i+ii]} loading="lazy"
-                        onClick={this.handleImageClick}/>
+                        />
                     )
                     imgCt++; 
                 }
-                build.push(<div className={this.isImageClicked ? "image-gallery-clicked" : 'image-gallery'} key={i} >{buildImgs}</div>);
-            };
+                build.push(<div className={'image-gallery'} >{buildImgs}</div>);
+            }
         };
         return build; 
     }
