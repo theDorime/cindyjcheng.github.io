@@ -3,7 +3,7 @@ import { Home } from "./scripts/Home"
 import { Portfolio } from "./scripts/Portfolio"
 import { Game } from "./scripts/Game"
 
-import { Gallery, PuertoRico, Graduation, NiagaraFalls, SpringBreak } from "./scripts/Gallery/Gallery"
+import { Gallery, PuertoRico, Graduation, Buffalo, NYC, Iceland} from "./scripts/Gallery/Gallery"
 
 import { SideNavBar, CreateNavBar } from "./scripts/Util"
 
@@ -18,10 +18,11 @@ function App() {
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/Game" element={<Game />} />
 
+        <Route path="/Iceland" element={<Iceland />} />
         <Route path="/Graduation" element={<Graduation />} />
-        <Route path="/NiagaraFalls" element={<NiagaraFalls />} />  
+        <Route path="/Buffalo" element={<Buffalo />} />  
         <Route path="/PuertoRico" element={<PuertoRico />} /> 
-        <Route path="/SpringBreak" element={<SpringBreak />} /> 
+        <Route path="/NYC" element={<NYC />} /> 
       </Routes>
     </div>
   )

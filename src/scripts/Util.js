@@ -54,6 +54,7 @@ export function SideNavBar(page) {
     textDecoration: 'none',
     outline: 'none',
     boxShadow: 'none',
+    margin: '0.5px'
 };
 
   const linksFiltered = links.filter(item => item.path !== pageNav && item.text !== page)

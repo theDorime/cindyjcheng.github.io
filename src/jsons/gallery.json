@@ -1,5 +1,14 @@
 [
-    
+   {
+    "name": "Iceland", 
+    "path": "iceland/",
+    "photos": {
+        "src": 
+        [
+            "img1.JPG", "img2.JPG","img3.JPG", "img4.JPG", "img5.JPG", "img6.JPG", "img12.JPG", "img9.JPG", "img7.JPG", "img10.JPG", "img11.JPG","img13.JPG", "img15.JPG", "img14.JPG", "img8.JPG", "img16.JPG", "img17.JPG", "img18.JPG"
+        ]
+    }
+   },
     {
         "name": "Puerto Rico", 
         "path": "puertoRico/",
@@ -12,12 +21,12 @@
     },
 
     {
-        "name": "Niagara Falls", 
-        "path": "falls/",
+        "name": "Buffalo", 
+        "path": "buffalo/",
         "photos": {
             "src": 
             [
-                "img1.JPG", "img2.JPG", "img3.JPG", "img3.JPG"
+                "img10.JPG", "img12.JPG", "img6.JPG", "img3.JPG", "img1.JPG", "img2.JPG","img4.JPG", "img5.JPG", "img9.JPG", "img11.JPG", "img8.JPG", "img7.JPG"
             ]
         }
     },
@@ -28,14 +37,14 @@
         "photos": {
             "src": 
             [
-                "img4.JPG", "img5.JPG", "img6.JPG", "img1.JPG", "img2.JPG", "img3.JPG"
+                "img7.JPG", "img8.JPG", "img9.JPG", "img4.JPG", "img5.JPG", "img6.JPG", "img1.JPG", "img2.JPG", "img3.JPG"
             ]
         }
     },
 
     {
-        "name": "Spring Break", 
-        "path": "home/",
+        "name": "NYC", 
+        "path": "NYC/",
         "photos": {
             "src": 
             [
