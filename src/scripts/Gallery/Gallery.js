@@ -1,45 +1,15 @@
 import React from 'react'
 import { SideNavBar } from '../Util'
 import Photos from './Photos'
+import { useLocation } from 'react-router-dom';
 
-export function Iceland() {
-    const bg = new Photos('Iceland');
+export function Gallery() {
+    const match = useLocation();
+    const location = match.pathname.replace('/', '');
+
+    const bg = new Photos(location);
     return <div> 
             {SideNavBar('Gallery')}
             {bg.buildGallery()}
     </div>
 }
-
-export function PuertoRico() {
-    const bg = new Photos('Puerto Rico');
-    return <div> 
-            {SideNavBar('Gallery')}
-            {bg.buildGallery()}
-    </div>
-}
-
-export function Buffalo() {
-    const bg = new Photos('Buffalo');
-    return <div> 
-            {SideNavBar('Gallery')}
-            {bg.buildGallery()}
-    </div>
-}
-
-export function Graduation() {
-    const bg = new Photos('Graduation');
-    return <div> 
-            {SideNavBar('Gallery')}
-            {bg.buildGallery()}
-    </div>
-}
-
-export function NYC() {
-    const bg = new Photos('NYC');
-    return <div> 
-            {SideNavBar('Gallery')}
-            {bg.buildGallery()}
-    </div>
-}
-
-

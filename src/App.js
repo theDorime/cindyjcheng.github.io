@@ -1,4 +1,5 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes} from "react-router-dom"
+
 import { Home } from "./scripts/Home"
 import { Portfolio } from "./scripts/Portfolio"
 import { Game } from "./scripts/Game"
@@ -18,11 +19,11 @@ function App() {
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/Game" element={<Game />} />
 
-        <Route path="/Iceland" element={<Iceland />} />
-        <Route path="/Graduation" element={<Graduation />} />
-        <Route path="/Buffalo" element={<Buffalo />} />  
-        <Route path="/PuertoRico" element={<PuertoRico />} /> 
-        <Route path="/NYC" element={<NYC />} /> 
+        <Route path="/Iceland" element={<Gallery />} />
+        <Route path="/Graduation" element={<Gallery />} />
+        <Route path="/Buffalo" element={<Gallery />} />  
+        <Route path="/PuertoRico" element={<Gallery />} /> 
+        <Route path="/NYC" element={<Gallery />} /> 
       </Routes>
     </div>
   )

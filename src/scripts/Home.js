@@ -2,6 +2,7 @@ import React from 'react'
 import { SideNavBar } from './Util'
 import '../styles/Home.css'
 export function Home() {
+
     return <div> 
         {SideNavBar('Home')}
         <div class="container-fluid bg-2 text-center">
