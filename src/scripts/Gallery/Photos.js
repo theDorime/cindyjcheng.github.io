@@ -9,15 +9,21 @@ class Photos extends Component {
         super(sectName);
         const galleryData = require('../../jsons/gallery.json');
 
+        this.state = {
+            imgClicked: null,
+            buildImgs: []
+        };
+
         this.sectName = sectName;
         this.dataSect = galleryData[galleryData.findIndex((item) => item.name.replace(' ', '') === this.sectName.replace(' ', ''))];
-        this.state = {
-            isImageClicked: false,
-          };
-    };
+       
+        this.build = this.buildNewGallery();
+   };
+   
 
-    buildGallery = () => {
-        const build = []
+    buildNewGallery = () => {
+
+        let build = []
         let imgCt = 0; 
         
         build.push(<div className="line-with-header">
@@ -27,20 +33,29 @@ class Photos extends Component {
         
         for (let i = 0; i < this.dataSect.photos.src.length - (this.dataSect.photos.src.length % 3); i++) {
             const buildImgs = [];
+
             if(i%3 == 0){
                 for (let ii = 0; ii < 3; ii++) {
-                    buildImgs.push(
-                        <img class="images" src={require(`../../assets/filmPhotos/${this.dataSect.path}${this.dataSect.photos.src[i+ii]}`)} alt="Pic should be here" key={this.dataSect.path+this.dataSect.photos.src[i+ii]} loading="lazy"
+                    const imgPath = this.dataSect.path+this.dataSect.photos.src[i+ii];
+
+                    if (this.imgClicked == null) {
+                        buildImgs.push(
+                        <img className={`images ${this.imgClicked === imgPath ? 'images-stayActive' : 'images'}`} src={require(`../../assets/filmPhotos/${imgPath}`)} 
+                            alt="Pic should be here"
+                            key={imgPath} 
+                            loading="lazy"
+                            // onClick={() => (this.imgClicked ? this.handleImageClickOff(imgPath) : this.handleImageClickOn(imgPath))}
                         />
-                    )
+                        )
+                    }
+         
                     imgCt++; 
                 }
                 build.push(<div className={'image-gallery'} >{buildImgs}</div>);
             }
         };
-        return build; 
+        return build
     }
-    
-}
+};
 
 export default Photos;

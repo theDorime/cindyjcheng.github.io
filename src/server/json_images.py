@@ -1,6 +1,11 @@
 import json
 import mysql.connector
 
+
+# Static site or expand to dynamic?
+# ***Database may not be necessary unless hosting database and backend server for client-server features. Site 2.0 Restructure TBD...***
+
+# Testing connection
 connection = mysql.connector.connect(host='localhost', user='root', password='', database='Gallery')
 
 if connection.is_connected(): 
@@ -22,17 +27,3 @@ if connection.is_connected():
         print(row)
 else: 
     print('Connection Failed')
-
-connection.close()
-data = {
-    "name": "John Doe",
-    "age": 30,
-    "city": "Example City",
-    "skills": ["Python", "JavaScript", "SQL"]
-}
-
-# Convert the Python dictionary to a JSON-formatted string
-json_string = json.dumps(data, indent=2)
-
-# Print the JSON string
-print(json_string)
