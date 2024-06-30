@@ -19,11 +19,17 @@ function App() {
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/Game" element={<Game />} />
 
-        <Route path="/Iceland" element={<Gallery />} />
-        <Route path="/Graduation" element={<Gallery />} />
         <Route path="/Buffalo" element={<Gallery />} />  
-        <Route path="/PuertoRico" element={<Gallery />} /> 
-        <Route path="/NYC" element={<Gallery />} /> 
+        <Route path="/Graduation" element={<Gallery />} />
+        <Route path="/Puerto_Rico_1" element={<Gallery />} /> 
+        <Route path="/New_York_City" element={<Gallery />} />
+        <Route path="/Iceland" element={<Gallery />} />
+
+        <Route path="/Puerto_Rico_2" element={<Gallery />} /> 
+        <Route path="/Roadtrip" element={<Gallery />} />
+        <Route path="/Red_Rock" element={<Gallery />} /> 
+        <Route path="/Zion" element={<Gallery />} /> 
+        <Route path="/Rumney" element={<Gallery />} />
       </Routes>
     </div>
   )

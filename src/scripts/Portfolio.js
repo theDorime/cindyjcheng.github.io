@@ -16,7 +16,7 @@ export function Portfolio() {
       };
 
    return <div>
-        {SideNavBar('Portfolio')}
+        {SideNavBar('Portfolio', '')}
 
         <h3 className='portAlign'> Info <br/><br/>
 

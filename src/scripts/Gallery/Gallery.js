@@ -7,10 +7,10 @@ export function Gallery() {
     const match = useLocation();
     const location = match.pathname.replace('/', '');
     const bg = new Photos(location);
-    
+  
     return (
         <div> 
-            {SideNavBar('Gallery')}
+            {SideNavBar('Gallery', match.pathname)}
             {bg.buildNewGallery()}
         </div>
     )   

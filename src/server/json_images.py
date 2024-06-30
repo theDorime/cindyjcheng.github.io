@@ -25,5 +25,5 @@ if connection.is_connected():
     # Process the rows
     for row in rows:
         print(row)
-else: 
+else:
     print('Connection Failed')

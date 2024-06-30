@@ -21,7 +21,7 @@ export function Game() {
 
     
     return <div>
-        {SideNavBar('Game')}
+        {SideNavBar('Game', '')}
         <h3>A work in progress . . .
         <br></br><h5>Whack mole for now<br></br># Of Whacks: <b style={{ color: 'red' }}>{count}</b> </h5> </h3>
         

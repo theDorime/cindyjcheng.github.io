@@ -15,7 +15,7 @@ class Photos extends Component {
         };
 
         this.sectName = sectName;
-        this.dataSect = galleryData[galleryData.findIndex((item) => item.name.replace(' ', '') === this.sectName.replace(' ', ''))];
+        this.dataSect = galleryData[galleryData.findIndex((item) => item.name === this.sectName)];
        
         this.build = this.buildNewGallery();
    };
@@ -27,7 +27,7 @@ class Photos extends Component {
         let imgCt = 0; 
         
         build.push(<div className="line-with-header">
-        <h2 className="header-title">{this.sectName}</h2>
+        <h2 className="header-title">{this.sectName.replaceAll("_", " ")}</h2>
         <hr className="line"/>
         </div>)
         
@@ -40,7 +40,7 @@ class Photos extends Component {
 
                     if (this.imgClicked == null) {
                         buildImgs.push(
-                        <img className={`images ${this.imgClicked === imgPath ? 'images-stayActive' : 'images'}`} src={require(`../../assets/filmPhotos/${imgPath}`)} 
+                        <img className={`images ${this.imgClicked === imgPath ? 'images-stayActive' : 'images'}`} src={require(`../../assets/photos/${imgPath}`)} 
                             alt="Pic should be here"
                             key={imgPath} 
                             loading="lazy"
