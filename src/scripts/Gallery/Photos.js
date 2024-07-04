@@ -7,6 +7,8 @@ import React, { Component } from 'react';
 class Photos extends Component {
     constructor(sectName) {
         super(sectName);
+
+        //Get gallery data
         const galleryData = require('../../jsons/gallery.json');
 
         this.state = {
