@@ -47,19 +47,19 @@
         "path": "puertoRico1/",
         "photos": {
             "src": [
-                "_puertoRico1_img0.jpg",
-                "_puertoRico1_img1.jpg",
-                "_puertoRico1_img2.jpg",
-                "_puertoRico1_img3.jpg",
-                "_puertoRico1_img4.jpg",
-                "_puertoRico1_img5.jpg",
-                "_puertoRico1_img6.jpg",
-                "_puertoRico1_img7.jpg",
-                "_puertoRico1_img8.jpg",
-                "_puertoRico1_img9.jpg",
-                "_puertoRico1_img10.jpg",
-                "_puertoRico1_img11.jpg",
-                "_puertoRico1_img12.jpg"
+                "puertoRico1_img0.jpg",
+                "puertoRico1_img1.jpg",
+                "puertoRico1_img2.jpg",
+                "puertoRico1_img3.jpg",
+                "puertoRico1_img4.jpg",
+                "puertoRico1_img5.jpg",
+                "puertoRico1_img6.jpg",
+                "puertoRico1_img7.jpg",
+                "puertoRico1_img8.jpg",
+                "puertoRico1_img9.jpg",
+                "puertoRico1_img10.jpg",
+                "puertoRico1_img11.jpg",
+                "puertoRico1_img12.jpg"
             ]
         }
     },
@@ -94,15 +94,15 @@
         "path": "grad/",
         "photos": {
             "src": [
-                "_grad_img0.jpg",
-                "_grad_img1.jpg",
-                "_grad_img2.jpg",
-                "_grad_img3.jpg",
-                "_grad_img4.jpg",
-                "_grad_img5.jpg",
-                "_grad_img6.jpg",
-                "_grad_img7.jpg",
-                "_grad_img8.jpg"
+                "grad_img0.jpg",
+                "grad_img1.jpg",
+                "grad_img2.jpg",
+                "grad_img3.jpg",
+                "grad_img4.jpg",
+                "grad_img5.jpg",
+                "grad_img6.jpg",
+                "grad_img7.jpg",
+                "grad_img8.jpg"
             ]
         }
     },
@@ -111,18 +111,18 @@
         "path": "buffalo/",
         "photos": {
             "src": [
-                "_buffalo_img0.jpg",
-                "_buffalo_img1.jpg",
-                "_buffalo_img2.jpg",
-                "_buffalo_img3.jpg",
-                "_buffalo_img4.jpg",
-                "_buffalo_img5.jpg",
-                "_buffalo_img6.jpg",
-                "_buffalo_img7.jpg",
-                "_buffalo_img8.jpg",
-                "_buffalo_img9.jpg",
-                "_buffalo_img10.jpg",
-                "_buffalo_img11.jpg"
+                "buffalo_img0.jpg",
+                "buffalo_img1.jpg",
+                "buffalo_img2.jpg",
+                "buffalo_img3.jpg",
+                "buffalo_img4.jpg",
+                "buffalo_img5.jpg",
+                "buffalo_img6.jpg",
+                "buffalo_img7.jpg",
+                "buffalo_img8.jpg",
+                "buffalo_img9.jpg",
+                "buffalo_img10.jpg",
+                "buffalo_img11.jpg"
             ]
         }
     },
@@ -131,18 +131,18 @@
         "path": "nyc/",
         "photos": {
             "src": [
-                "_nyc_img0.jpg",
-                "_nyc_img1.jpg",
-                "_nyc_img2.jpg",
-                "_nyc_img3.jpg",
-                "_nyc_img4.jpg",
-                "_nyc_img5.jpg",
-                "_nyc_img6.jpg",
-                "_nyc_img7.jpg",
-                "_nyc_img8.jpg",
-                "_nyc_img9.jpg",
-                "_nyc_img10.jpg",
-                "_nyc_img11.jpg"
+                "nyc_img0.jpg",
+                "nyc_img1.jpg",
+                "nyc_img2.jpg",
+                "nyc_img3.jpg",
+                "nyc_img4.jpg",
+                "nyc_img5.jpg",
+                "nyc_img6.jpg",
+                "nyc_img7.jpg",
+                "nyc_img8.jpg",
+                "nyc_img9.jpg",
+                "nyc_img10.jpg",
+                "nyc_img11.jpg"
             ]
         }
     }
