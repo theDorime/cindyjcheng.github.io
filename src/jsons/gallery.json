@@ -1,68 +1,13 @@
-[  
+[
     {
-    "name": "Buffalo", 
-    "path": "buffalo/",
-    "photos": {
-        "src": 
-        [
-            "img10.JPG", "img12.JPG", "img6.JPG", "img3.JPG", "img1.JPG", "img2.JPG","img4.JPG", "img5.JPG", "img9.JPG", "img11.JPG", "img8.JPG", "img7.JPG"
-        ]
-        }
-    },
-
-    {
-        "name": "Graduation", 
-        "path": "grad/",
+        "name": "zion",
+        "path": "zion/",
         "photos": {
-            "src": 
-            [
-                "img7.JPG", "img8.JPG", "img9.JPG", "img4.JPG", "img5.JPG", "img6.JPG", "img1.JPG", "img2.JPG", "img3.JPG"
-            ]
-        }
-    },
-
-    {
-        "name": "Puerto_Rico_1", 
-        "path": "puertoRico1/",
-        "photos": {
-            "src": 
-            [
-                "img2.JPG", "img3.JPG","img4.JPG", "img7.JPG", "img8.JPG", "img9.JPG", "img5.JPG", "img6.JPG", "img13.JPG"
-            ]
-        }
-    },
-
-    {
-        "name": "Iceland", 
-        "path": "iceland/",
-        "photos": {
-            "src": 
-            [
-                "img1.JPG", "img2.JPG","img3.JPG", "img4.JPG", "img5.JPG", "img6.JPG", "img12.JPG", "img9.JPG", "img7.JPG", "img10.JPG", "img11.JPG","img13.JPG", "img15.JPG", "img14.JPG", "img8.JPG", "img16.JPG", "img17.JPG", "img18.JPG"
-            ]
-        }
-    },
-    
-    {
-        "name": "New_York_City", 
-        "path": "nyc/",
-        "photos": {
-            "src": 
-            [
-                "img1.JPG", "img2.JPG", "img3.JPG", "img4.JPG", "img5.JPG", "img6.JPG", "img7.JPG", "img8.JPG", "img9.JPG", "img10.JPG", "img11.JPG", "img12.JPG"
-            ]
-        }
-    },
-
-    {
-        "name": "Red_Rock", 
-        "path": "redRock/",
-        "photos": {
-            "src": 
-            [
-                "img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg", "img6.jpg", "img7.jpg", "img8.jpg", "img9.jpg", "img10.jpg", "img11.jpg", "img12.jpg"
+            "src": [
+                "cindyjcheng.github.io/src/assets/photos/zion/_zion_img0.jpg",
+                "cindyjcheng.github.io/src/assets/photos/zion/_zion_img1.jpg",
+                "cindyjcheng.github.io/src/assets/photos/zion/_zion_img2.jpg"
             ]
         }
     }
-
 ]
