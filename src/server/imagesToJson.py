@@ -1,12 +1,11 @@
-import image, os
+import gallerySection, os
 
 galleryPath = "cindyjcheng.github.io/src/assets/photos"
-jsonFilePath = "cindyjcheng.github.io/src/jsons/sample.json"
 
 # sect1 = image.sectionBuilder(galleryPath, "test_manager")
 # sect1.manageImages()
 
-sect2 = image.sectionBuilder(galleryPath, "zion")
+sect2 = gallerySection.sectionBuilder(galleryPath, "buffalo")
 sect2.manageImages()
 
 # print(sect1.imgWidgets)
