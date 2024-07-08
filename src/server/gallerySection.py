@@ -1,6 +1,6 @@
 import os, re, json
 from PIL import Image, ImageTk
-from tkinter import Tk, Button, mainloop, Label
+from tkinter import Tk, Button, Label
 
 class sectionBuilder:
     def __init__(self, path, subdir):
@@ -14,15 +14,6 @@ class sectionBuilder:
         self.master.geometry("%dx%d" % (self.width, self.height))
         self.master.title(subdir)
 
-        # Add save button
-        saveBtn = Button(self.master, text="Save")
-        saveBtn.grid(row=0, column=3, padx=10, pady=10, sticky='ew')
-        saveBtn.bind("<Button-1>", self.saveWidgets)
-        # Add reset button
-        resetBtn = Button(self.master, text="Reset")
-        resetBtn.grid(row=1, column=3, padx=10, pady=10, sticky='ew')
-        resetBtn.bind("<Button-1>", self.resetWidgets)
-        
         #Store gallery info 
         self.path = path
         self.subdir = subdir
@@ -99,7 +90,8 @@ class sectionBuilder:
 
     def saveToJson(self, jsonFilePath):
         #Get img paths to build json
-        imgs = [img.path for img in self.imgWidgets.values()]
+        imgs = [img.path.split("/")[-1] for img in self.imgWidgets.values()]
+        print(imgs)
         buildJson = {
             "name": self.subdir,
             "path": self.subdir+"/",
@@ -112,16 +104,18 @@ class sectionBuilder:
         #Write to json file
         if os.path.exists(jsonFilePath):
             #Open json file to load and update 
+
+            newSect=False
             with open(jsonFilePath,'r+') as file:
                 currentJson = json.load(file)
 
                 for section in currentJson:
                     #Update section
-                    if section['name'] == self.subdir:
+                    if section['name'].lower() == self.subdir.lower():
                         section.update(buildJson)
-                    else:
-                        #New subdir found, create new section
-                        currentJson.append(buildJson)
+                  
+                if newSect:
+                    currentJson.append(buildJson)
 
                 file.seek(0)
                 json.dump(currentJson, file, indent = 4)
@@ -147,7 +141,7 @@ class sectionBuilder:
             imgs.path = newPath
             ct+=1
 
-        self.saveToJson("cindyjcheng.github.io/src/jsons/gallery.json")
+        self.saveToJson("../cindyjcheng.github.io/src/jsons/gallery.json")
 
     #Restore previous grid 
     def resetWidgets(self, event): 
@@ -180,7 +174,22 @@ class sectionBuilder:
 
         #Set img as widget for UI 
         for file in files: 
+            
             imgPath = self.path+"/"+self.subdir+"/"+file
+
+            if "cr2" in file.lower(): 
+
+                openImg = Image.open(imgPath)
+                rgbImg = openImg.convert('RGB')
+
+                newFile = file.lower().replace("cr2","jpg")
+                newPath = self.path+"/"+self.subdir+"/"+newFile
+                rgbImg.save(newPath)
+
+                #Clean up
+                openImg.close()
+                os.remove(imgPath)
+                imgPath = newPath
 
             im = Image.open(imgPath)
             im = im.resize((self.image_width, self.image_height))
@@ -204,6 +213,16 @@ class sectionBuilder:
             label.bind("<Enter>", self.onWidget)
             label.bind("<Leave>", self.offWidget)
 
+        # Add save button
+        saveBtn = Button(self.master, text="Save")
+        saveBtn.grid(row=0, column=3, padx=10, pady=10, sticky='ew')
+        saveBtn.bind("<Button-1>", self.saveWidgets)
+        # Add reset button
+        resetBtn = Button(self.master, text="Reset")
+        resetBtn.grid(row=1, column=3, padx=10, pady=10, sticky='ew')
+        resetBtn.bind("<Button-1>", self.resetWidgets)
+        
+    
         self.master.mainloop()
 
 

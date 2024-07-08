@@ -1,112 +1,148 @@
 [
     {
-        "name": "zion",
+        "name": "Zion",
         "path": "zion/",
         "photos": {
             "src": [
-                "cindyjcheng.github.io/src/assets/photos/zion/_zion_img0.jpg",
-                "cindyjcheng.github.io/src/assets/photos/zion/_zion_img1.jpg",
-                "cindyjcheng.github.io/src/assets/photos/zion/_zion_img2.jpg"
+                "zion_img0.jpg",
+                "zion_img1.jpg",
+                "zion_img2.jpg",
+                "zion_img3.jpg",
+                "zion_img4.jpg",
+                "zion_img5.jpg",
+                "zion_img6.jpg",
+                "zion_img7.jpg",
+                "zion_img8.jpg",
+                "zion_img9.jpg",
+                "zion_img10.jpg",
+                "zion_img11.jpg",
+                "zion_img12.jpg",
+                "zion_img13.jpg",
+                "zion_img14.jpg"
             ]
         }
     },
     {
-        "name": "buffalo",
-        "path": "buffalo/",
+        "name": "Red_Rock",
+        "path": "redRock/",
         "photos": {
             "src": [
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img0.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img1.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img2.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img3.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img4.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img5.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img6.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img7.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img8.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img9.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img10.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img11.jpg"
+                "redRock_img0.jpg",
+                "redRock_img1.jpg",
+                "redRock_img2.jpg",
+                "redRock_img3.jpg",
+                "redRock_img4.jpg",
+                "redRock_img5.jpg",
+                "redRock_img6.jpg",
+                "redRock_img7.jpg",
+                "redRock_img8.jpg",
+                "redRock_img9.jpg",
+                "redRock_img10.jpg",
+                "redRock_img11.jpg"
             ]
         }
     },
     {
-        "name": "buffalo",
-        "path": "buffalo/",
+        "name": "Puerto_Rico_1",
+        "path": "puertoRico1/",
         "photos": {
             "src": [
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img0.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img1.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img2.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img3.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img4.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img5.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img6.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img7.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img8.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img9.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img10.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img11.jpg"
+                "_puertoRico1_img0.jpg",
+                "_puertoRico1_img1.jpg",
+                "_puertoRico1_img2.jpg",
+                "_puertoRico1_img3.jpg",
+                "_puertoRico1_img4.jpg",
+                "_puertoRico1_img5.jpg",
+                "_puertoRico1_img6.jpg",
+                "_puertoRico1_img7.jpg",
+                "_puertoRico1_img8.jpg",
+                "_puertoRico1_img9.jpg",
+                "_puertoRico1_img10.jpg",
+                "_puertoRico1_img11.jpg",
+                "_puertoRico1_img12.jpg"
             ]
         }
     },
     {
-        "name": "buffalo",
-        "path": "buffalo/",
+        "name": "Iceland",
+        "path": "iceland/",
         "photos": {
             "src": [
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img0.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img1.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img2.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img3.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img4.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img5.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img6.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img7.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img8.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img9.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img10.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img11.jpg"
+                "iceland_img0.jpg",
+                "iceland_img1.jpg",
+                "iceland_img2.jpg",
+                "iceland_img3.jpg",
+                "iceland_img4.jpg",
+                "iceland_img5.jpg",
+                "iceland_img6.jpg",
+                "iceland_img7.jpg",
+                "iceland_img8.jpg",
+                "iceland_img9.jpg",
+                "iceland_img10.jpg",
+                "iceland_img11.jpg",
+                "iceland_img12.jpg",
+                "iceland_img13.jpg",
+                "iceland_img14.jpg",
+                "iceland_img15.jpg",
+                "iceland_img16.jpg",
+                "iceland_img17.jpg"
             ]
         }
     },
     {
-        "name": "buffalo",
-        "path": "buffalo/",
+        "name": "Graduation",
+        "path": "grad/",
         "photos": {
             "src": [
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img0.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img1.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img2.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img3.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img4.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img5.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img6.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img7.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img8.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img9.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img10.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img11.jpg"
+                "_grad_img0.jpg",
+                "_grad_img1.jpg",
+                "_grad_img2.jpg",
+                "_grad_img3.jpg",
+                "_grad_img4.jpg",
+                "_grad_img5.jpg",
+                "_grad_img6.jpg",
+                "_grad_img7.jpg",
+                "_grad_img8.jpg"
             ]
         }
     },
     {
-        "name": "buffalo",
+        "name": "Buffalo",
         "path": "buffalo/",
         "photos": {
             "src": [
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img0.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img1.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img2.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img3.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img4.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img5.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img6.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img7.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img8.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img9.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img10.jpg",
-                "cindyjcheng.github.io/src/assets/photos/buffalo/_buffalo_img11.jpg"
+                "_buffalo_img0.jpg",
+                "_buffalo_img1.jpg",
+                "_buffalo_img2.jpg",
+                "_buffalo_img3.jpg",
+                "_buffalo_img4.jpg",
+                "_buffalo_img5.jpg",
+                "_buffalo_img6.jpg",
+                "_buffalo_img7.jpg",
+                "_buffalo_img8.jpg",
+                "_buffalo_img9.jpg",
+                "_buffalo_img10.jpg",
+                "_buffalo_img11.jpg"
+            ]
+        }
+    },
+    {
+        "name": "New_York_City",
+        "path": "nyc/",
+        "photos": {
+            "src": [
+                "_nyc_img0.jpg",
+                "_nyc_img1.jpg",
+                "_nyc_img2.jpg",
+                "_nyc_img3.jpg",
+                "_nyc_img4.jpg",
+                "_nyc_img5.jpg",
+                "_nyc_img6.jpg",
+                "_nyc_img7.jpg",
+                "_nyc_img8.jpg",
+                "_nyc_img9.jpg",
+                "_nyc_img10.jpg",
+                "_nyc_img11.jpg"
             ]
         }
     }

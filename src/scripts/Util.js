@@ -43,7 +43,8 @@ export function SideNavBar(page, dropDownPath) {
     textDecoration: 'none',
     outline: 'none',
     boxShadow: 'none',
-    margin: '0.5px'
+    margin: '0.5px',
+    padding: '10px 20px'
   };
 
   const activeToggleStyle = {
@@ -54,7 +55,8 @@ export function SideNavBar(page, dropDownPath) {
     textDecoration: 'none',
     outline: 'none',
     boxShadow: 'none',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    padding: '10px 20px'
   };
 
   const itemStyle = {
