@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2a5d70f5.css",
-    "main.js": "/static/js/main.a6a0eee7.js",
+    "main.js": "/static/js/main.1c03a4fa.js",
     "static/media/redRock_img3.jpg": "/static/media/redRock_img3.7e4ad98000c10da47603.jpg",
     "static/media/redRock_img1.jpg": "/static/media/redRock_img1.27802ec3cba6fb73b247.jpg",
     "static/media/redRock_img4.jpg": "/static/media/redRock_img4.a3ee64ae5398b7ad7aa4.jpg",
@@ -82,12 +82,18 @@
     "static/media/buffalo_img6.jpg": "/static/media/buffalo_img6.164fa46b10441b0b0d59.jpg",
     "static/media/puertoRico1_img5.jpg": "/static/media/puertoRico1_img5.e9a4ad096a891a8dc8e3.jpg",
     "static/media/buffalo_img4.jpg": "/static/media/buffalo_img4.5923c0e19ff141492dd0.jpg",
+    "static/media/puertoRico2_img3.jpg": "/static/media/puertoRico2_img3.04d572e1cb49ef7c24b7.jpg",
+    "static/media/puertoRico2_img0.jpg": "/static/media/puertoRico2_img0.e2279bb4ef42aafb7b30.jpg",
     "static/media/grad_img8.jpg": "/static/media/grad_img8.652b9a252243e74d7ee1.jpg",
     "static/media/buffalo_img3.jpg": "/static/media/buffalo_img3.41dffeea5008f87830e3.jpg",
     "static/media/pfp.jpg": "/static/media/pfp.297a66253992e88e8a3b.jpg",
     "static/media/puertoRico1_img3.jpg": "/static/media/puertoRico1_img3.a14e3d37c80d5f50e649.jpg",
+    "static/media/puertoRico2_img4.jpg": "/static/media/puertoRico2_img4.6a8de3078fefb8fab4e0.jpg",
+    "static/media/puertoRico2_img1.jpg": "/static/media/puertoRico2_img1.4328f1ddb9ed5f98eb47.jpg",
     "static/media/puertoRico1_img12.jpg": "/static/media/puertoRico1_img12.fe8db2d60d1edc1b9ba8.jpg",
     "static/media/buffalo_img11.jpg": "/static/media/buffalo_img11.2eb00833b7180c8f8a67.jpg",
+    "static/media/puertoRico2_img5.jpg": "/static/media/puertoRico2_img5.1b1d5268ee22613f33d6.jpg",
+    "static/media/puertoRico2_img2.jpg": "/static/media/puertoRico2_img2.ea8045ebae8f4f29d3de.jpg",
     "static/media/nyc_img3.jpg": "/static/media/nyc_img3.15ae043caa97daac2046.jpg",
     "static/media/puertoRico1_img0.jpg": "/static/media/puertoRico1_img0.491efaaa5823c68cf914.jpg",
     "static/media/grad_img7.jpg": "/static/media/grad_img7.978263e2f9801e68ec69.jpg",
@@ -98,10 +104,10 @@
     "static/media/ouch.mp3": "/static/media/ouch.09f7f366c24d5c9d8327.mp3",
     "index.html": "/index.html",
     "main.2a5d70f5.css.map": "/static/css/main.2a5d70f5.css.map",
-    "main.a6a0eee7.js.map": "/static/js/main.a6a0eee7.js.map"
+    "main.1c03a4fa.js.map": "/static/js/main.1c03a4fa.js.map"
   },
   "entrypoints": [
     "static/css/main.2a5d70f5.css",
-    "static/js/main.a6a0eee7.js"
+    "static/js/main.1c03a4fa.js"
   ]
 }
