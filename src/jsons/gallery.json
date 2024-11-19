@@ -1,47 +1,163 @@
 [
-    
     {
-        "name": "Puerto Rico", 
-        "path": "puertoRico/",
+        "name": "Zion",
+        "path": "zion/",
         "photos": {
-            "src": 
-            [
-                "img2.JPG", "img3.JPG","img4.JPG", "img7.JPG", "img8.JPG", "img9.JPG", "img5.JPG", "img6.JPG", "img13.JPG"
+            "src": [
+                "zion_img0.jpg",
+                "zion_img1.jpg",
+                "zion_img2.jpg",
+                "zion_img3.jpg",
+                "zion_img4.jpg",
+                "zion_img5.jpg",
+                "zion_img6.jpg",
+                "zion_img7.jpg",
+                "zion_img8.jpg",
+                "zion_img9.jpg",
+                "zion_img10.jpg",
+                "zion_img11.jpg",
+                "zion_img12.jpg",
+                "zion_img13.jpg",
+                "zion_img14.jpg"
             ]
         }
     },
-
     {
-        "name": "Niagara Falls", 
-        "path": "falls/",
+        "name": "Red_Rock",
+        "path": "redRock/",
         "photos": {
-            "src": 
-            [
-                "img1.JPG", "img2.JPG", "img3.JPG", "img3.JPG"
+            "src": [
+                "redRock_img0.jpg",
+                "redRock_img1.jpg",
+                "redRock_img2.jpg",
+                "redRock_img3.jpg",
+                "redRock_img4.jpg",
+                "redRock_img5.jpg",
+                "redRock_img6.jpg",
+                "redRock_img7.jpg",
+                "redRock_img8.jpg",
+                "redRock_img9.jpg",
+                "redRock_img10.jpg",
+                "redRock_img11.jpg"
             ]
         }
     },
-
     {
-        "name": "Graduation", 
+        "name": "Puerto_Rico_1",
+        "path": "puertoRico1/",
+        "photos": {
+            "src": [
+                "puertoRico1_img0.jpg",
+                "puertoRico1_img1.jpg",
+                "puertoRico1_img2.jpg",
+                "puertoRico1_img3.jpg",
+                "puertoRico1_img4.jpg",
+                "puertoRico1_img5.jpg",
+                "puertoRico1_img6.jpg",
+                "puertoRico1_img7.jpg",
+                "puertoRico1_img8.jpg",
+                "puertoRico1_img9.jpg",
+                "puertoRico1_img10.jpg",
+                "puertoRico1_img11.jpg",
+                "puertoRico1_img12.jpg"
+            ]
+        }
+    },
+    {
+        "name": "Puerto_Rico_2",
+        "path": "puertoRico2/",
+        "photos": {
+            "src": [
+                "puertoRico2_img0.jpg",
+                "puertoRico2_img1.jpg",
+                "puertoRico2_img2.jpg",
+                "puertoRico2_img3.jpg",
+                "puertoRico2_img4.jpg",
+                "puertoRico2_img5.jpg"
+            ]
+        }
+    },
+    {
+        "name": "Iceland",
+        "path": "iceland/",
+        "photos": {
+            "src": [
+                "iceland_img0.jpg",
+                "iceland_img1.jpg",
+                "iceland_img2.jpg",
+                "iceland_img3.jpg",
+                "iceland_img4.jpg",
+                "iceland_img5.jpg",
+                "iceland_img6.jpg",
+                "iceland_img7.jpg",
+                "iceland_img8.jpg",
+                "iceland_img9.jpg",
+                "iceland_img10.jpg",
+                "iceland_img11.jpg",
+                "iceland_img12.jpg",
+                "iceland_img13.jpg",
+                "iceland_img14.jpg",
+                "iceland_img15.jpg",
+                "iceland_img16.jpg",
+                "iceland_img17.jpg"
+            ]
+        }
+    },
+    {
+        "name": "Graduation",
         "path": "grad/",
         "photos": {
-            "src": 
-            [
-                "img4.JPG", "img5.JPG", "img6.JPG", "img1.JPG", "img2.JPG", "img3.JPG"
+            "src": [
+                "grad_img0.jpg",
+                "grad_img1.jpg",
+                "grad_img2.jpg",
+                "grad_img3.jpg",
+                "grad_img4.jpg",
+                "grad_img5.jpg",
+                "grad_img6.jpg",
+                "grad_img7.jpg",
+                "grad_img8.jpg"
             ]
         }
     },
-
     {
-        "name": "Spring Break", 
-        "path": "home/",
+        "name": "Buffalo",
+        "path": "buffalo/",
         "photos": {
-            "src": 
-            [
-                "img1.JPG", "img2.JPG", "img3.JPG", "img4.JPG", "img5.JPG", "img6.JPG"
+            "src": [
+                "buffalo_img0.jpg",
+                "buffalo_img1.jpg",
+                "buffalo_img2.jpg",
+                "buffalo_img3.jpg",
+                "buffalo_img4.jpg",
+                "buffalo_img5.jpg",
+                "buffalo_img6.jpg",
+                "buffalo_img7.jpg",
+                "buffalo_img8.jpg",
+                "buffalo_img9.jpg",
+                "buffalo_img10.jpg",
+                "buffalo_img11.jpg"
+            ]
+        }
+    },
+    {
+        "name": "New_York_City",
+        "path": "nyc/",
+        "photos": {
+            "src": [
+                "nyc_img0.jpg",
+                "nyc_img1.jpg",
+                "nyc_img2.jpg",
+                "nyc_img3.jpg",
+                "nyc_img4.jpg",
+                "nyc_img5.jpg",
+                "nyc_img6.jpg",
+                "nyc_img7.jpg",
+                "nyc_img8.jpg",
+                "nyc_img9.jpg",
+                "nyc_img10.jpg",
+                "nyc_img11.jpg"
             ]
         }
     }
-
 ]
