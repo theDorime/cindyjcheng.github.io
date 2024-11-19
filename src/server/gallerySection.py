@@ -3,7 +3,7 @@ from PIL import Image, ImageTk
 from tkinter import Tk, Button, Label
 
 class sectionBuilder:
-    def __init__(self, path, subdir):
+    def __init__(self, path, subdir, jsonFile):
         #Build Tkinter window
         self.master = Tk()
 
@@ -17,6 +17,7 @@ class sectionBuilder:
         #Store gallery info 
         self.path = path
         self.subdir = subdir
+        self.jsonFile = jsonFile
 
         #Store in map grid location (r,c)->label 
         self.imgWidgets = {}
@@ -103,9 +104,9 @@ class sectionBuilder:
         
         #Write to json file
         if os.path.exists(jsonFilePath):
-            #Open json file to load and update 
+            #Open json file to load and update
 
-            newSect=False
+            newSect = True
             with open(jsonFilePath,'r+') as file:
                 currentJson = json.load(file)
 
@@ -113,6 +114,8 @@ class sectionBuilder:
                     #Update section
                     if section['name'].lower() == self.subdir.lower():
                         section.update(buildJson)
+                        newSect=False
+                        break
                   
                 if newSect:
                     currentJson.append(buildJson)
@@ -121,7 +124,6 @@ class sectionBuilder:
                 json.dump(currentJson, file, indent = 4)
                 file.truncate()
         else:
-            print(False)
             with open(jsonFilePath, "w") as newfile:
                 newfile.write(json.dumps([buildJson], indent=3))
 
@@ -132,16 +134,23 @@ class sectionBuilder:
         for imgs in self.imgWidgets.values():
             oldPath = imgs.path
             fileName = oldPath.split("/")[-1]
-            newPath = imgs.path.replace(fileName,"_"+self.subdir+"_img"+str(ct)+".jpg")
-
-            if ("_"+self.subdir in oldPath):
-                newPath = imgs.path.replace(fileName,self.subdir+"_img"+str(ct)+".jpg")
             
+            # Create the new file name
+            newFileName = f"{self.subdir}_img{ct}.jpg"
+            newPath = oldPath.replace(fileName, newFileName)
+            
+            # Ensure the new file path is unique
+            while os.path.exists(newPath):
+                ct += 1
+                newFileName = f"{self.subdir}_img{ct}.jpg"
+                newPath = oldPath.replace(fileName, newFileName)
+            
+            # Rename the file
             os.rename(oldPath, newPath)
             imgs.path = newPath
             ct+=1
 
-        self.saveToJson("../cindyjcheng.github.io/src/jsons/gallery.json")
+        self.saveToJson(self.jsonFile)
 
     #Restore previous grid 
     def resetWidgets(self, event): 
@@ -196,7 +205,7 @@ class sectionBuilder:
             tkImgs.append(ImageTk.PhotoImage(im))
 
             r, c = divmod(ct, 3)
-            ct+=1  
+            ct+=1
 
             label = Label(self.master, image=tkImgs[-1])
             label.path = imgPath

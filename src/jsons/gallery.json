@@ -64,6 +64,20 @@
         }
     },
     {
+        "name": "Puerto_Rico_2",
+        "path": "puertoRico2/",
+        "photos": {
+            "src": [
+                "puertoRico2_img0.jpg",
+                "puertoRico2_img1.jpg",
+                "puertoRico2_img2.jpg",
+                "puertoRico2_img3.jpg",
+                "puertoRico2_img4.jpg",
+                "puertoRico2_img5.jpg"
+            ]
+        }
+    },
+    {
         "name": "Iceland",
         "path": "iceland/",
         "photos": {
